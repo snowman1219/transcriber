@@ -82,3 +82,9 @@ indent-style = "space"
 skip-magic-trailing-comma = false
 # Like Black, automatically detect the appropriate line ending.
 line-ending = "auto"
+
+[dependency-groups]
+lint = [
+    "pyright>=1.1.402",
+    "ruff>=0.12.1",
+]
