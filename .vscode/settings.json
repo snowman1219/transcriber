@@ -1,0 +1,26 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "file": ".github/copilot-instructions.md",
+        }
+    ],
+    "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+        {
+            "text": "Titles must follow the gitmoji convention.",
+        },
+        {
+            "text": "Summarize the changes and write the details in bullet points.",
+        },
+        {
+            "text": "Please write in English.",
+        }
+    ]
+}
