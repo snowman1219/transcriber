@@ -1,0 +1,84 @@
+[project]
+name = "transcriber"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "faster-whisper>=1.1.1",
+    "openai>=1.92.2",
+    "pydub>=0.25.1",
+]
+
+[tool.ruff]
+line-length = 150
+indent-width = 4
+target-version = 'py312'
+exclude = [".venv", "notebooks/*", "external_libs/*"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "TD003",
+    "FIX002",
+    "ARG002",
+    "A005",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D107",
+    "D400",
+    "D415",
+    "D203",
+    "D213",
+    "PLR0913",
+    "W191",
+    "E111",
+    "E114",
+    "E117",
+    "EM101",
+    "D206",
+    "D300",
+    "G004",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "COM812",
+    "COM819",
+    "ISC001",
+    "ISC002",
+    "TC001",
+    "TC002",
+    "S101",
+    "ANN201",
+    "INP001",
+    "ERA001",
+    "TRY003",
+    "EM102",
+    "DTZ005",
+    "PT011",
+    "ARG003",
+    "FBT",
+    "RUF",
+    "D205",
+]
+exclude = ["data", "notebooks", "external_libs"]
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
